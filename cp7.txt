@@ -1,0 +1,20 @@
+8. Производится стрельба в мишень в виде круга радиуса R и с координатами его центра X0, Y0. Определить результат стрельбы по координатам выстрела X,Y. begin        	function popadanie(a, b, c, d, e):				if  (c-a)^2+(d-b)^2≤e^2			then				return 1		else			return 0	input R       	input X 	input Y	input X0       	input Y0                	if R>0            	then          		if  popadanie (X0,Y0,X,Y,R) = 1            		then
+
+                        		print «Попал»
+
+            	else
+
+            		print «Не попал»
+
+         else
+
+                 print «Invalid data»
+
+	exception
+
+		when X0,Y0,X,Y,R are not numbers 
+
+			print «Это не число. Введите число»
+
+end
+               
